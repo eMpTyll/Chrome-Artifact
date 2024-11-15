@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng chi tiết vị trí lưu trữ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Bảng chi tiết vị trí lưu trữ liên quan đến trình duyệt và người dùng</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Mục</th>
+                        <th>Đường dẫn</th>
+                        <th>Mô tả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Browser History</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/history</code></li>
+                                <li><code>home/chronus/user/history</code></li>
+                                <li><code>home/chronus/u-(GUID)/history</code></li>
+                                <li><code>home/user/(GUID)/history</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/history</code></li>
+                            </ul>
+                        </td>
+                        <td>Lịch sử duyệt web của người dùng</td>
+                    </tr>
+                    <tr>
+                        <td>Browser Cache</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Cache</code></li>
+                                <li><code>home/chronus/user/Cache</code></li>
+                                <li><code>home/chronus/u-(GUID)/Cache</code></li>
+                                <li><code>home/user/(GUID)/Cache</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/Cache/data_1</code></li>
+                            </ul>
+                        </td>
+                        <td>Bộ nhớ đệm của trình duyệt</td>
+                    </tr>
+                    <tr>
+                        <td>Browser History – Current Tabs</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Current Tabs</code></li>
+                                <li><code>home/chronus/user/Current Tabs</code></li>
+                                <li><code>home/chronus/u-(GUID)/Current Tabs</code></li>
+                                <li><code>home/user/(GUID)/Current Tabs</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/Current Tabs</code></li>
+                            </ul>
+                        </td>
+                        <td>Tab hiện tại của trình duyệt</td>
+                    </tr>
+                    <tr>
+                        <td>Browser History – Last Tabs</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Last Tabs</code></li>
+                                <li><code>home/chronus/user/Last Tabs</code></li>
+                                <li><code>home/chronus/u-(GUID)/Last Tabs</code></li>
+                                <li><code>home/user/(GUID)/Last Tabs</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/Last Tabs</code></li>
+                            </ul>
+                        </td>
+                        <td>Tab cuối cùng của trình duyệt</td>
+                    </tr>
+                    <tr>
+                        <td>Browser History – Current Sessions</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Current Sessions</code></li>
+                                <li><code>home/chronus/user/Current Sessions</code></li>
+                                <li><code>home/chronus/u-(GUID)/Current Sessions</code></li>
+                                <li><code>home/user/(GUID)/Current Sessions</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/Current Sessions</code></li>
+                            </ul>
+                        </td>
+                        <td>Phiên hiện tại của trình duyệt</td>
+                    </tr>
+                    <tr>
+                        <td>Browser History – Last Sessions</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Last Sessions</code></li>
+                                <li><code>home/chronus/user/Last Sessions</code></li>
+                                <li><code>home/chronus/u-(GUID)/Last Sessions</code></li>
+                                <li><code>home/user/(GUID)/Last Sessions</code></li>
+                                <li><code>home/(username)/.config/chromium/Default/Last Sessions</code></li>
+                            </ul>
+                        </td>
+                        <td>Phiên cuối cùng của trình duyệt</td>
+                    </tr>
+                    <tr>
+                        <td>Downloads</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Downloads</code></li>
+                                <li><code>home/chronus/user/Downloads</code></li>
+                                <li><code>home/chronus/u-(GUID)/Downloads</code></li>
+                                <li><code>home/user/(GUID)/Downloads</code></li>
+                                <li><code>home/(username)/Downloads</code></li>
+                                <li>Bảng <code>downloads_url_chains</code> trong lịch sử trình duyệt</li>
+                            </ul>
+                        </td>
+                        <td>Thư mục tải về và bảng tải xuống trong lịch sử</td>
+                    </tr>
+                    <tr>
+                        <td>Extensions</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Extensions</code></li>
+                                <li><code>home/chronus/user/Extensions</code></li>
+                                <li><code>home/chronus/u-(GUID)/Extensions</code></li>
+                                <li><code>home/user/(GUID)/Extensions</code></li>
+                                <li><code>home/(username)/Extensions</code></li>
+                            </ul>
+                        </td>
+                        <td>Thư mục tiện ích mở rộng (GUID)</td>
+                    </tr>
+                    <tr>
+                        <td>Extensions – manifest.json</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Extensions/(extensionGUID)/(Version)/manifest.json</code></li>
+                                <li><code>home/chronus/user/Extensions/(extensionGUID)/(Version)/manifest.json</code></li>
+                                <li><code>home/chronus/u-(GUID)/Extensions/(extensionGUID)/(Version)/manifest.json</code></li>
+                                <li><code>home/user/(GUID)/Extensions/(extensionGUID)/(Version)/manifest.json</code></li>
+                                <li><code>home/(username)/Extensions/(extensionGUID)/(Version)/manifest.json</code></li>
+                            </ul>
+                        </td>
+                        <td>File cấu hình tiện ích mở rộng</td>
+                    </tr>
+                    <tr>
+                        <td>Extensions – Sync App Settings</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/Sync App Settings</code></li>
+                                <li><code>home/chronus/user/Sync App Settings</code></li>
+                                <li><code>home/chronus/u-(GUID)/Sync App Settings</code></li>
+                                <li><code>home/user/(GUID)/Sync App Settings</code></li>
+                                <li><code>home/(username)/Sync App Settings</code></li>
+                            </ul>
+                        </td>
+                        <td>Cài đặt đồng bộ ứng dụng tiện ích mở rộng</td>
+                    </tr>
+                    <tr>
+                        <td>Offline Storage</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/gcache/v1/files</code></li>
+                                <li><code>home/chronus/user/gcache/v1/files</code></li>
+                                <li><code>home/chronus/u-(GUID)/gcache/v1/files</code></li>
+                                <li><code>home/user/(GUID)/gcache/v1/files</code></li>
+                                <li><code>home/(username)/gcache/v1/files</code></li>
+                            </ul>
+                        </td>
+                        <td>Lưu trữ ngoại tuyến (GUID, meta/*.ldb)</td>
+                    </tr>
+                    <tr>
+                        <td>Shell History</td>
+                        <td>
+                            <ul>
+                                <li><code>home/shadow/(GUID)/mount/user/.bash_history</code></li>
+                                <li><code>home/chronus/user/.bash_history</code></li>
+                                <li><code>home/chronus/u-(GUID)/.bash_history</code></li>
+                                <li><code>home/user/(GUID)/.bash_history</code></li>
+                                <li><code>home/(username)/.bash_history</code></li>
+                            </ul>
+                        </td>
+                        <td>Lịch sử shell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
